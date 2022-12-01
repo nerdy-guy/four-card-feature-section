@@ -1,0 +1,255 @@
+:root {
+  /* Colors */
+  --clr-Red: hsl(0, 78%, 62%);
+  --clr-Cyan: hsl(180, 62%, 55%);
+  --clr-Orange: hsl(34, 97%, 64%);
+  --clr-Blue: hsl(212, 86%, 64%);
+
+  --clr-Very-Dark-Blue: hsl(234, 12%, 34%);
+  --clr-Grayish-Blue: hsl(229, 6%, 66%);
+  --clr-Very-Light-Gray: hsl(0, 0%, 98%);
+
+  /* Fonts */
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-extra-light: 200;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+
+  --fs-body: 0.9375rem;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: rgb(243, 236, 236);
+  font-family: var(--ff-primary);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.main-header h1 {
+  margin-top: 2em;
+  font-weight: var(--fw-extra-light);
+  opacity: 0.6;
+}
+
+.main-header h2 {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.main-header p {
+  opacity: 0.4;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+
+.container {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+}
+
+/* first column */
+.col-1 {
+  align-self: center;
+  max-height: 15em;
+  max-width: 22em;
+  background-color: rgb(255, 255, 255);
+  border-top: 0.4em solid var(--clr-Cyan);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.col-1 h3 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+  opacity: 0.7;
+  margin-top: 1em;
+  margin-left: 1.5em;
+}
+
+.col-1 p {
+  margin-top: 0.5em;
+  margin-left: 2.3em;
+  font-weight: var(--fw-regular);
+  opacity: 0.3;
+}
+
+.col-1 img {
+  align-self: flex-end;
+  max-width: 3em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Second column */
+
+/* first card */
+.col-2 .card-1 {
+  align-self: center;
+  max-height: 15em;
+  max-width: 22em;
+  background-color: rgb(255, 255, 255);
+  border-top: 0.4em solid var(--clr-Cyan);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.col-2 .card-1 h3 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+  opacity: 0.7;
+  margin-top: 1em;
+  margin-left: 1.5em;
+}
+
+.col-2 .card-1 p {
+  margin-top: 0.5em;
+  margin-left: 2.3em;
+  font-weight: var(--fw-regular);
+  opacity: 0.3;
+}
+
+.col-2 .card-1 img {
+  align-self: flex-end;
+  max-width: 3em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Second card */
+.col-2 .card-2 {
+  align-self: center;
+  margin-top: 3em;
+  max-height: 15em;
+  max-width: 22em;
+  background-color: rgb(255, 255, 255);
+  border-top: 0.4em solid var(--clr-Cyan);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.col-2 .card-2 h3 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+  opacity: 0.7;
+  margin-top: 1em;
+  margin-left: 1.5em;
+}
+
+.col-2 .card-2 p {
+  margin-top: 0.5em;
+  margin-left: 2.3em;
+  font-weight: var(--fw-regular);
+  opacity: 0.3;
+}
+
+.col-2 .card-2 img {
+  align-self: flex-end;
+  max-width: 3em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Third column */
+.col-3 {
+  align-self: center;
+  max-height: 15em;
+  max-width: 22em;
+  background-color: rgb(255, 255, 255);
+  border-top: 0.4em solid var(--clr-Blue);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.col-3 h3 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+  opacity: 0.7;
+  margin-top: 1em;
+  margin-left: 1.5em;
+}
+
+.col-3 p {
+  margin-top: 0.5em;
+  margin-left: 2.3em;
+  font-weight: var(--fw-regular);
+  opacity: 0.3;
+}
+
+.col-3 img {
+  align-self: flex-end;
+  max-width: 3em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-2 .card-1 {
+    margin-top: 2em;
+  }
+
+  .col-2 .card-2 {
+    margin-top: 2em;
+  }
+
+  .col-3 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
